@@ -1,0 +1,72 @@
+.title {
+  text-align: center;
+  text-transform: uppercase;
+  font-style: italic;
+}
+.img_1 img {
+  padding: 0.5vw;
+  width: 30.5%;
+  cursor: pointer;
+  animation: OpacityPhoto 1000ms linear alternate;
+}
+.img_1 img:hover {
+  filter: brightness(100%);
+  opacity: 60%;
+}
+.img_2 img {
+  width: 20%;
+  padding: 0.5vw;
+  cursor: pointer;
+  animation: OpacityPhoto 1000ms linear alternate;
+}
+.img_2 img:hover {
+  filter: brightness(100%);
+  opacity: 60%;
+  cursor: pointer;
+}
+/* @media (min-width: 768px) {
+  .title {
+    text-align: left;
+    font-size: small;
+    text-transform: uppercase;
+    font-style: italic;
+  }
+  .img_1 img {
+    padding: 0vw;
+    margin-left: 2vw;
+    width: 40%;
+  }
+  .img_2 img {
+    padding: 0.5vw;
+    width: 40%;
+  }
+} */
+/* chiều rộng tối đa, nghĩa là dành cho trình duyệt nhỏ hơn 980px, lớn hơn sẽ khác */
+@media (max-width: 600px) {
+  .title {
+    font-size: small;
+    text-transform: uppercase;
+    font-style: italic;
+  }
+  .title h2 {
+    font-size: 120%;
+  }
+  .img_1 img {
+    padding: 0.2vw;
+    /* margin-left: 10vw; */
+    width: 40%;
+  }
+  .img_2 img {
+    /* padding: 0.5vw; */
+    width: 40%;
+  }
+}
+
+@keyframes OpacityPhoto {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}

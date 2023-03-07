@@ -1,0 +1,37 @@
+.Product {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-top: 2rem;
+  font-style: italic;
+  /* margin-left: 16vw; */
+}
+.imgShopPage img {
+  cursor: pointer;
+  width: 10rem;
+  animation: scaleimg 600ms ease-in;
+}
+.imgShopPage img:hover {
+  filter: brightness(100%);
+  opacity: 60%;
+  cursor: pointer;
+}
+.imgShopPage p {
+  font-size: small;
+  width: 12rem;
+}
+
+@keyframes scaleimg {
+  0% {
+    transform: scale(0%);
+  }
+  100% {
+    transform: scale(100%);
+  }
+}
+
+@media (max-width: 600px) {
+  .Product {
+    margin-left: 20vw;
+  }
+}

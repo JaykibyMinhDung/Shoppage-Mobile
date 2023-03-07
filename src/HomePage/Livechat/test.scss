@@ -1,0 +1,195 @@
+.message-box {
+  flex: 0 1 42px;
+  width: 90%;
+  background: #fff;
+  margin: 2px auto;
+  /*-webkit-box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.4);
+  -moz-box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.4);
+  box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.4);*/
+  /*background: rgba(0, 0, 0, 0.3);
+      border-top:1px solid #e3e3e3;*/
+  padding: 10px;
+  position: relative;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  height: 14px;
+  border: 1px solid #ccc;
+
+  &.message-input {
+    background: none;
+    border: none;
+    outline: none !important;
+    resize: none;
+    /* color: rgba(255, 255, 255, .8);*/
+    font-size: 15px;
+    height: 24px;
+    margin: 0;
+    padding-right: 20px;
+    width: 265px;
+    color: #444;
+  }
+  textarea:focus:-webkit-placeholder {
+    color: transparent;
+  }
+  &.message-submit {
+    position: absolute;
+    z-index: 1;
+    top: 9px;
+    right: 10px;
+    color: #4a90e2;
+    border: none;
+    /* background: #c29d5f;*/
+    background: #fff;
+    font-size: 12px;
+    text-transform: uppercase;
+    line-height: 1;
+    padding: 6px 10px;
+    border-radius: 5px;
+    outline: none !important;
+    transition: background 0.2s ease;
+    cursor: pointer;
+    &:hover {
+      background: #fff;
+      color: #333;
+    }
+  }
+}
+
+.messages {
+  flex: 1 1 auto;
+  /*  color: rgba(255, 255, 255, .5);
+    color: #fff;*/
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  & .messages-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 101%;
+    width: 100%;
+  }
+  .message {
+    clear: both;
+    float: left;
+    padding: 6px 10px 7px;
+    -webkit-border-radius: 20px 20px 20px 0;
+    -moz-border-radius: 20px 20px 20px 0;
+    border-radius: 20px 20px 20px 0;
+    background: #eee; /*rgba(0, 0, 0, 0.1);*/
+    margin: 8px 0;
+    font-size: 14px;
+    line-height: 1.4;
+    margin-left: 35px;
+    position: relative;
+    border: 1px solid #ccc;
+    /*text-shadow: 0 1px 1px rgba(0, 0, 0, .2);*/
+    .timestamp {
+      position: absolute;
+      bottom: -15px;
+      font-size: 10px;
+      color: #555;
+      right: 30px;
+      /* color: rgba(255, 255, 255, .7);*/
+    }
+    .checkmark-sent-delivered {
+      position: absolute;
+      bottom: -15px;
+      right: 10px;
+      font-size: 12px;
+      color: #999;
+    }
+    .checkmark-read {
+      color: blue;
+      position: absolute;
+      bottom: -15px;
+      right: 16px;
+      font-size: 12px;
+    }
+    &::before {
+      /*  content: '';
+        position: absolute;
+        bottom: -6px;
+        border-top: 6px solid rgba(0, 0, 0, 0.1);
+        left: 0;
+        border-right: 7px solid transparent;*/
+    }
+    .avatar {
+      position: absolute;
+      z-index: 1;
+      bottom: -15px;
+      left: -35px;
+      -webkit-border-radius: 30px;
+      -moz-border-radius: 30px;
+      border-radius: 30px;
+      width: 30px;
+      height: 30px;
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+      border: 2px solid rgba(255, 255, 255, 0.5);
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    &.message-personal {
+      float: right;
+      text-align: right;
+      /*      background: linear-gradient(120deg, #ddd, #eee);*/
+      background: #fff;
+      border: 1px solid #ccc /*#4A90E2*/;
+      -webkit-border-radius: 20px 20px 0 20px;
+      -moz-border-radius: 20px 20px 0 20px;
+      border-radius: 20px 20px 0 20px;
+
+      &::before {
+        /*
+            content:"";
+        border-color:#4A90E2 transparent;
+          width:0;
+          border-style:solid;*/
+        /*
+          left: auto;
+          right: 0;
+          border-right: none;
+         border-left: 8px solid transparent;
+          border-top: 9px solid #fff;
+          
+          bottom: -8px;*/
+      }
+    }
+    &:last-child {
+      margin-bottom: 30px;
+    }
+    &.new {
+      transform: scale(0);
+      transform-origin: 0 0;
+      animation: bounce 500ms linear both;
+    }
+    &.loading {
+      &::before {
+        @include ball;
+        border: none;
+        animation-delay: 0.15s;
+      }
+      & span {
+        display: block;
+        font-size: 0;
+        width: 20px;
+        height: 10px;
+        position: relative;
+        &::before {
+          @include ball;
+          margin-left: -7px;
+        }
+        &::after {
+          @include ball;
+          margin-left: 7px;
+          animation-delay: 0.3s;
+        }
+      }
+    }
+  }
+}

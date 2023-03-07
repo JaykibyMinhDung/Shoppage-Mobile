@@ -1,0 +1,136 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 20;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.modal {
+  position: fixed;
+  top: 4%;
+  left: 16%;
+  overflow: hidden;
+  width: 70%;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  z-index: 30;
+  animation: slide-down 300ms ease-out forwards;
+}
+/* Chỉnh popup */
+.layout_modal {
+  display: flex;
+  justify-content: space-around;
+}
+.exit {
+  cursor: pointer;
+  width: 2%;
+}
+.detail {
+  display: flex;
+  justify-content: space-around;
+  /* width: 100%; */
+}
+.detail img {
+  padding-top: 1.4rem;
+  padding-right: 1rem;
+  width: 50%;
+}
+.detail div {
+  font-style: italic;
+  width: 60%;
+  overflow: auto;
+}
+.detail div button {
+  display: flex;
+  padding-top: 1rem;
+  font-style: italic;
+  width: 12rem;
+  color: white;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.801);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+.detail div button i {
+  padding-top: 0.2rem;
+  padding-left: 0.8rem;
+  padding-right: 1.4rem;
+}
+@media (max-width: 600px) {
+  .modal {
+    overflow: auto;
+    width: 20rem;
+    height: 15rem;
+    top: 12%;
+    left: calc(20% - 4rem);
+    padding: 1rem;
+  }
+  .layout_modal {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 10%;
+  }
+  .detail {
+    display: flex;
+    /* justify-content: space-around; */
+    width: 100%;
+    height: 20%;
+  }
+  .detail img {
+    padding-top: calc(100% - 11rem);
+    padding-right: 0rem;
+    width: 40%;
+    height: 20%;
+  }
+  .detail div {
+    font-style: italic;
+    font-size: 80%;
+    width: 100%;
+    height: 10%;
+    overflow: auto;
+    /* display: none; */
+  }
+  .detail div h3 {
+    font-style: italic;
+    font-size: 1%;
+    /* display: none; */
+  }
+  .detail div button {
+    display: block;
+    padding-top: 1rem;
+    font-style: italic;
+    width: 5rem;
+    height: 2%;
+    color: white;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.801);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  }
+  .detail div button i {
+    padding-top: 0rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+}
+/* @media (max-width: 768px) {
+  .modal {
+    width: 50rem;
+    left: calc(50% - 18.33rem);
+  }
+} */
+
+@keyframes slide-down {
+  from {
+    opacity: 0;
+    transform: translateY(-3rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,212 @@
+.buttonDetail button {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+  color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.726);
+  font-style: italic;
+  border: white;
+}
+.buttonDetail button:hover {
+  outline: 0px;
+  color: aliceblue;
+  background-color: rgba(0, 0, 0, 0.822);
+}
+.alignImage {
+  display: flex;
+  padding-left: 10rem;
+  padding-top: 2rem;
+  padding-bottom: 0.5rem;
+}
+.alignImage > img {
+  width: 30%;
+  height: 10%;
+  margin-left: -20rem;
+  cursor: pointer;
+}
+.alignImage > img:hover {
+  filter: brightness(100%);
+  opacity: 60%;
+}
+.imageDetailPage {
+  display: flex;
+  flex-direction: column;
+  width: 35.333%;
+}
+.imageDetailPage img {
+  width: 20%;
+  cursor: pointer;
+}
+.imageDetailPage img:hover {
+  filter: brightness(100%);
+  opacity: 60%;
+}
+.inforDetail {
+  width: 50%;
+  padding-left: 2rem;
+  font-size: small;
+  font-style: italic;
+  text-align: left;
+  align-items: stretch;
+}
+.inforDetail p {
+  color: rgb(141, 141, 141);
+}
+.inforDetail em {
+  color: rgb(141, 141, 141);
+  font-weight: 400;
+  padding-left: 1vw;
+}
+
+/* Input Reated Product */
+.ButtonCart {
+  display: flex;
+  /* outline: hidden; */
+}
+.ButtonCart button {
+  width: 8rem;
+  position: relative;
+  right: 8%;
+}
+.ButtonCart input::placeholder {
+  color: rgb(129, 129, 129);
+  font-size: small;
+}
+.OptionNumber {
+  background-color: rgba(255, 255, 255, 0);
+  width: 2.5rem;
+  height: 2rem;
+  text-align: center;
+  font-size: 1rem;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  border-left: 0;
+  border-right: 0;
+  padding: 0;
+  position: relative;
+  right: 10%;
+}
+.OptionNumber:focus {
+  outline: none;
+}
+.OptionNumber::-webkit-outer-spin-button,
+.OptionNumber::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.description {
+  padding-left: 10rem;
+  text-align: left;
+}
+.description button {
+  height: 2.5rem;
+}
+.description p {
+  padding-top: 1rem;
+}
+.paragraph {
+  width: 50%;
+  color: rgb(141, 141, 141);
+  font-style: italic;
+}
+/* relatedProducts */
+.AlignDetail {
+  padding-left: 10rem;
+  text-align: left;
+  font-style: italic;
+}
+.RelatedProduct {
+  display: flex;
+  justify-content: left;
+  text-align: center;
+  width: 70%;
+}
+.relatedProducts img {
+  /* width: 60%; */
+  cursor: pointer;
+}
+
+.price {
+  font-size: small;
+  color: rgb(129, 129, 129);
+}
+.relatedProducts img:hover {
+  filter: brightness(100%);
+  opacity: 60%;
+}
+
+@media (max-width: 600px) {
+  .buttonDetail button {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.726);
+    font-style: italic;
+    border: white;
+  }
+  .alignImage {
+    display: block;
+    margin-left: 0rem;
+
+    padding-left: 0rem;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  .alignImage > img {
+    width: 100%;
+    height: 10%;
+    margin-left: 1rem;
+    cursor: pointer;
+  }
+  .imageDetailPage {
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 50%;
+    margin-right: 5rem;
+  }
+  .imageDetailPage img {
+    margin-right: 5rem;
+    width: 40%;
+    cursor: pointer;
+  }
+  .inforDetail {
+    width: 100%;
+    padding-left: 0rem;
+    margin-left: 1rem;
+    font-size: small;
+    font-style: italic;
+    text-align: left;
+    align-items: stretch;
+  }
+  .AlignDetail {
+    padding-left: 1rem;
+    text-align: left;
+    font-style: italic;
+  }
+  /* description */
+  .description {
+    padding-left: 1rem;
+    text-align: justify;
+    width: 180%;
+  }
+  .description button {
+    height: 2.5rem;
+  }
+  .description p {
+    padding-top: 1rem;
+  }
+  .paragraph {
+    width: 50%;
+    color: rgb(141, 141, 141);
+    font-style: italic;
+  }
+
+  /* relatedProducts */
+  .AlignDetail {
+    padding-left: 1rem;
+    margin-left: 0rem;
+    text-align: left;
+    font-style: italic;
+  }
+}

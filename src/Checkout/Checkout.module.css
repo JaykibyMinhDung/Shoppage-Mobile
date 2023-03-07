@@ -1,0 +1,110 @@
+.maincheckout {
+  display: flex;
+  padding-left: 15vw;
+}
+.widthform {
+  width: 50%;
+}
+.form {
+  background-color: rgb(255, 255, 255);
+  padding: 2rem;
+  text-align: left;
+}
+.form h2 {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 140%;
+  color: rgba(94, 94, 94, 0.836);
+  padding-bottom: 1rem;
+}
+.form input {
+  width: 100%;
+  padding: 0.25rem 0vw;
+}
+.form input::placeholder {
+  padding-left: 1%;
+}
+.form label {
+  text-align: left;
+}
+.form a {
+  text-decoration: none;
+}
+.form div {
+  padding-top: 1.5rem;
+  font-style: italic;
+  color: rgb(163, 163, 163);
+}
+.form button {
+  width: 10vw;
+  height: 3vw;
+  margin-top: 1rem;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.699);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+  border: white;
+}
+.form button:hover {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.904);
+}
+
+/* BoxCheckOut */
+.billcheckout {
+  width: 30%;
+  height: max-content;
+  padding: 2vw;
+  text-align: left;
+  background-color: rgba(226, 226, 226, 0.507);
+  font-style: italic;
+  margin-top: 4vw;
+}
+.billcheckout h3 {
+  font-weight: 400;
+  font-size: 170%;
+}
+.billcheckout em {
+  /* margin: 10%; */
+  color: rgb(37, 37, 37);
+  font-weight: 500;
+}
+.billcheckout span {
+  padding-left: 30%;
+  color: rgb(75, 75, 75);
+}
+.billcheckout small {
+  padding-left: 1.5%;
+  color: rgba(94, 94, 94, 0.836);
+}
+
+@media (max-width: 600px) {
+  .maincheckout {
+    display: block;
+    padding-left: 1vw;
+  }
+  .banner {
+    width: 100%;
+    margin-right: 0%;
+  }
+  .widthform {
+    width: 100%;
+  }
+  .form button {
+    width: 100%;
+    height: 30%;
+    margin-top: 1rem;
+  }
+  .billcheckout {
+    width: 80%;
+    height: max-content;
+    padding: 0vw;
+    text-align: left;
+    background-color: rgba(226, 226, 226, 0.507);
+    font-style: italic;
+    margin-top: 4vw;
+    margin-left: 10%;
+  }
+  .billcheckout h3 {
+    text-align: center;
+  }
+}

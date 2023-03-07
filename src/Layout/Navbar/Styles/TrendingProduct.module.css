@@ -1,0 +1,103 @@
+.title {
+  text-align: left;
+  text-transform: uppercase;
+  font-style: italic;
+  margin-left: 19vw;
+}
+.title h2 {
+  font-weight: lighter;
+}
+/* background: blue; */
+.img_item {
+  display: flex;
+  flex-flow: wrap;
+  width: 70%;
+  margin-left: 16vw;
+  /* margin-right: 20vw; */
+}
+.img_item div {
+  width: 25%;
+  font-style: italic;
+}
+.img_item div img:hover {
+  filter: brightness(100%);
+  opacity: 60%;
+  cursor: pointer;
+}
+.img_item img {
+  width: 70%;
+  /* padding: 1%; */
+}
+.price {
+  margin-left: 2vw;
+  margin-top: -4%;
+  font-size: 85%;
+  color: rgb(139, 139, 139);
+}
+#name1 {
+  margin-left: 2.2vw;
+}
+
+@media (max-width: 500px) and (min-width: 670px) {
+  .title {
+    /* text-align: left; */
+    text-transform: uppercase;
+    font-style: italic;
+    margin-left: 0vw;
+  }
+  .img_item {
+    display: block;
+    /* flex-flow: wrap; */
+    width: 100%;
+    /* margin-left: 16vw;
+    margin-right: 20vw; */
+  }
+  .img_item div {
+    width: 25%;
+    font-style: italic;
+  }
+  .img_item img {
+    width: 70%;
+    padding: 1%;
+  }
+  .price {
+    margin-left: 2vw;
+    margin-top: -4%;
+    font-size: 85%;
+    color: rgb(139, 139, 139);
+  }
+  #name1 {
+    margin-left: 2.2vw;
+  }
+}
+/* Chiều rộng tối thiểu của trình duyệt là 800px, có nghĩa là bé hơn thì sẽ khác */
+@media (max-width: 600px) {
+  .title {
+    text-align: center;
+    margin-top: 4vw;
+    margin-left: 0vw;
+  }
+  .title h2 {
+    font-weight: 400;
+  }
+  .img_item {
+    width: 100%;
+  }
+  .img_item div {
+    width: 65%;
+    font-style: italic;
+  }
+  .img_item img {
+    width: 80%;
+    /* padding: 1%; */
+  }
+  .price {
+    margin-left: 2vw;
+    margin-top: -4%;
+    font-size: 90%;
+    color: rgb(139, 139, 139);
+  }
+  #name1 {
+    margin-left: 2.2vw;
+  }
+}

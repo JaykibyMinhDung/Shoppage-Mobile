@@ -1,0 +1,325 @@
+.TitleCart {
+  padding-left: 15rem;
+  text-align: left;
+  font-weight: 400;
+}
+.bodycart {
+  display: flex;
+  padding-left: 15rem;
+  width: 85%;
+}
+
+/* Bill */
+hr {
+  margin-left: 2vw;
+}
+.bill {
+  background-color: rgba(226, 226, 226, 0.507);
+  font-style: italic;
+  margin-left: 1vw;
+  padding-right: 2.5vw;
+  height: max-content;
+}
+.img {
+  width: 6vw;
+}
+.bill h3 {
+  padding-top: 1.5vw;
+  padding-left: 2vw;
+  text-align: left;
+  font-weight: 500;
+}
+.bill p {
+  padding-left: 2vw;
+  text-align: left;
+  font-weight: 500;
+  /* color: rgb(73, 73, 73); */
+}
+.bill button {
+  width: 15vw;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.699);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+  border: white;
+  position: relative;
+}
+.bill button:hover {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.904);
+}
+.bill input {
+  padding-left: 1.5rem;
+  width: 15vw;
+}
+.bill input:focus {
+  outline: none;
+}
+.DiscountBill {
+  padding-left: 3vw;
+  padding-top: 1vw;
+}
+.blur {
+  color: rgb(163, 163, 163);
+}
+
+/* CartTable */
+th {
+  font-weight: 600;
+}
+.table {
+  font-style: italic;
+  padding: 0 0.1rem;
+  width: 205%;
+}
+td,
+th {
+  font-style: italic;
+  padding: 0 0.2rem;
+  width: 10%;
+}
+.table h3 {
+  font-size: 100%;
+  font-weight: 500;
+  width: 8rem;
+}
+.table p {
+  color: rgb(163, 163, 163);
+}
+.inputpt {
+  background-color: #fff;
+  width: 2rem;
+  height: 2rem;
+  text-align: center;
+  font-size: 1rem;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  border-left: 0;
+  border-right: 0;
+  padding: 0;
+}
+.inputpt:focus {
+  outline: none;
+}
+
+.inputpt::-webkit-outer-spin-button,
+.inputpt::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.width button {
+  width: 2rem;
+  border: #fff;
+  background-color: rgba(221, 221, 221, 0);
+}
+.width {
+  /* display: flex;
+  flex-flow: nowrap; */
+  opacity: 1;
+  white-space: nowrap;
+}
+.remove {
+  cursor: pointer;
+}
+.remove:hover {
+  color: #31313198;
+}
+/* Footer Cart */
+.NaigateCart {
+  display: flex;
+  justify-content: space-between;
+  background-color: #dddddd42;
+  width: 47vw;
+  margin-left: 17%;
+  /* padding-left: 6rem; */
+  padding-top: 0rem;
+}
+.NaigateCart button {
+  border: #fff;
+  padding: 0.5rem;
+  color: rgb(87, 87, 87);
+  background-color: rgba(221, 221, 221, 0.151);
+}
+.NaigateCart button:hover {
+  color: #ffffffc0;
+  background-color: rgba(78, 78, 78, 0.336);
+  transition: boder-around 500ms ease forwards;
+}
+
+@keyframes boder-around {
+  0% {
+    border-top: 0px solid rgb(255, 255, 255);
+    transform: translateY(-6rem);
+  }
+  25% {
+    border-top: 1px solid rgb(0, 0, 0);
+    transform: translateY(-6rem);
+  }
+  50% {
+    border-top: 1px solid rgb(0, 0, 0);
+    border-right: 1px solid rgb(0, 0, 0);
+    transform: translateY(-6rem);
+  }
+  75% {
+    border-top: 1px solid rgb(0, 0, 0);
+    border-right: 1px solid rgb(0, 0, 0);
+    border-bottom: 1px solid rgb(0, 0, 0);
+    transform: translateY(-6rem);
+  }
+  100% {
+    border: 1px solid rgb(0, 0, 0);
+    transform: translateY(-6rem);
+  }
+}
+
+@media (max-width: 600px) {
+  .TitleCart {
+    padding-left: 1rem;
+    text-align: left;
+    font-weight: 400;
+  }
+  .bodycart {
+    display: block;
+    padding-left: 1rem;
+    width: 80%;
+  }
+  /* Bill */
+  hr {
+    margin-left: 2vw;
+  }
+  .bill {
+    background-color: rgba(226, 226, 226, 0.507);
+    font-style: italic;
+    margin-left: 5vw;
+    padding-right: 0vw;
+    width: 100%;
+    height: max-content;
+  }
+
+  .bill h3 {
+    padding-top: 2vw;
+    padding-left: 0vw;
+    text-align: center;
+    font-weight: 500;
+  }
+  .bill p {
+    padding-left: 2vw;
+    text-align: left;
+    font-weight: 500;
+    /* color: rgb(73, 73, 73); */
+  }
+  .bill button {
+    width: 50%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.699);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+    border: white;
+    position: relative;
+  }
+  .DiscountBill {
+    padding-left: 0vw;
+    padding-top: 1vw;
+  }
+  .bill button:hover {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.904);
+  }
+  .bill input {
+    padding-left: 1rem;
+    width: 100%;
+  }
+
+  /* CartTable */
+  .img {
+    width: 100%;
+  }
+  th {
+    font-weight: 600;
+  }
+  .table {
+    font-style: italic;
+    padding: 0 0.1rem;
+    width: 50%;
+  }
+  td,
+  th {
+    font-style: italic;
+    padding: 0 0.2rem;
+    width: 2%;
+  }
+  .table h3 {
+    font-size: 80%;
+    font-weight: 500;
+    width: 4rem;
+  }
+  .table p {
+    color: rgb(163, 163, 163);
+    width: 4%;
+  }
+  .inputpt {
+    background-color: #fff;
+    width: 1rem;
+    height: 2rem;
+    text-align: center;
+    font-size: 1rem;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    border-left: 0;
+    border-right: 0;
+    padding: 0;
+  }
+  .inputpt:focus {
+    outline: none;
+  }
+
+  .inputpt::-webkit-outer-spin-button,
+  .inputpt::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  .width button {
+    width: 2rem;
+    border: #fff;
+    background-color: rgba(221, 221, 221, 0);
+  }
+  .width {
+    /* display: flex;
+  flex-flow: nowrap; */
+    opacity: 1;
+    white-space: nowrap;
+  }
+  .remove {
+    cursor: pointer;
+  }
+  .remove:hover {
+    color: #31313198;
+  }
+
+  /* foot cart */
+  .NaigateCart {
+    display: flex;
+    justify-content: space-between;
+    background-color: #dddddd42;
+    width: 100%;
+    margin-left: 1%;
+    margin-top: 5%;
+    /* padding-left: 6rem; */
+    padding-top: 0rem;
+  }
+  .NaigateCart button {
+    border: #fff;
+    padding: 0.5rem;
+    color: rgb(87, 87, 87);
+    background-color: rgba(221, 221, 221, 0.151);
+  }
+  .NaigateCart button:hover {
+    color: #ffffffc0;
+    background-color: rgba(78, 78, 78, 0.336);
+    transition: boder-around 500ms ease forwards;
+  }
+}

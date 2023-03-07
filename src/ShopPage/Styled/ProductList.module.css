@@ -1,0 +1,148 @@
+.PopupCategories {
+  display: flex;
+  justify-content: space-around;
+  margin-right: 16vw;
+  margin-left: 18vw;
+}
+/*  Component Product List */
+.interface {
+  display: flex;
+  justify-content: space-between;
+}
+.interface select {
+  width: 10rem;
+  border-radius: 2px;
+  margin-right: 1.5vw;
+}
+.interface input:focus {
+  outline: none;
+}
+.interface input::placeholder {
+  color: rgba(107, 107, 107, 0.747);
+}
+.Pagenumber {
+  margin-right: 20vw;
+  text-align: right;
+}
+.Pagenumber span {
+  color: white;
+  /* width: 5rem; */
+  background-color: rgba(0, 0, 0, 0.836);
+  font-size: small;
+  padding: 2%;
+  margin: 0.2%;
+}
+.Pagenumber button {
+  border: white;
+  color: rgb(37, 37, 37);
+  background-color: rgb(255, 255, 255);
+}
+.Pagenumber button:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(255, 41, 41);
+}
+.width {
+  margin-top: 2vw;
+  width: 45vw;
+}
+
+/* Component NavbarShop */
+li {
+  font-style: italic;
+  list-style-type: none;
+  text-align: left;
+  color: rgb(160, 160, 160);
+  cursor: pointer;
+}
+.align_categories p {
+  background-color: rgba(211, 211, 211, 0.61);
+  font-style: italic;
+  text-transform: uppercase;
+  padding: 0.5vw 2vw;
+}
+.align_categories h1 {
+  font-weight: 450;
+  font-style: italic;
+  text-transform: uppercase;
+}
+.align_categories div {
+  font-style: italic;
+  text-align: left;
+  color: rgb(160, 160, 160);
+}
+.Link {
+  font-style: italic;
+  list-style-type: none;
+  padding: 0.4vw 2vw;
+  color: rgb(160, 160, 160);
+  cursor: pointer;
+}
+.active {
+  text-decoration: none;
+  color: white;
+  font-style: italic;
+  background-color: rgb(17, 17, 17);
+  padding: 0.4vw 2vw;
+  cursor: pointer;
+}
+/* a:hover {
+  text-decoration: none;
+  font-style: italic;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.637);
+} */
+
+/* Component Banner shop */
+.Banner {
+  background-color: rgba(146, 146, 146, 0.308);
+  height: 10rem;
+  display: flex;
+  justify-content: space-around;
+  justify-items: center;
+  align-items: center;
+  margin-right: 16vw;
+  margin-left: 16vw;
+  font-style: italic;
+  margin-bottom: 1vw;
+}
+.Banner p {
+  color: rgb(119, 119, 119);
+}
+.centered {
+  margin: 3rem auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 600px) {
+  .Banner {
+    background-color: rgba(146, 146, 146, 0.308);
+    height: 10rem;
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+    margin-right: 0vw;
+    margin-left: 0vw;
+    font-style: italic;
+    margin-bottom: 5vw;
+  }
+  .PopupCategories {
+    display: block;
+    justify-content: space-around;
+    margin-right: 0vw;
+    margin-left: 0vw;
+  }
+  .width {
+    margin-top: 2vw;
+    width: 45vw;
+  }
+  .interface {
+    margin-left: 5vw;
+  }
+  .interface select {
+    margin-right: 0vw;
+  }
+}

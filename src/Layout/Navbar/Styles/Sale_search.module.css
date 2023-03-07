@@ -1,0 +1,92 @@
+/* Sale box */
+.background_box {
+  background-color: rgba(216, 216, 216, 0.192);
+  margin-left: 18vw;
+  margin-right: 16vw;
+  display: flex;
+  justify-content: space-around;
+  font-style: italic;
+}
+.background_box h4 {
+  line-height: -2rem;
+  text-transform: uppercase;
+  font-weight: 450;
+}
+.background_box p {
+  font-size: 85%;
+  color: gray;
+}
+
+/* Search */
+.block_search {
+  margin-left: 18vw;
+  margin-right: 18vw;
+  display: flex;
+  justify-content: space-between;
+}
+.Sologan {
+  font-style: italic;
+}
+.Sologan p {
+  font-size: 85%;
+  color: gray;
+}
+.Sologan h1 {
+  line-height: 2rem;
+  font-weight: 350;
+  margin-bottom: 1%;
+}
+.search {
+  display: flex;
+  padding: 3.5vw 0;
+}
+.button {
+  width: 100%;
+  background-color: black;
+  color: white;
+  height: 2.5rem;
+}
+.button:hover {
+  border: 1px solid rgb(165, 165, 165);
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+.search input {
+  border: 1px solid rgb(158, 158, 158);
+  padding-left: 17vw;
+  /* width: 350%; */
+}
+
+@media (max-width: 600px) {
+  .background_box {
+    margin-left: 0vw;
+    margin-right: 0vw;
+  }
+  .background_box h4 {
+    line-height: -2rem;
+    text-transform: uppercase;
+    font-weight: 450;
+    font-size: 120%;
+  }
+  .block_search {
+    margin-left: 0vw;
+    margin-right: 0vw;
+    display: block;
+  }
+  .Sologan {
+    font-style: italic;
+  }
+  .Sologan p {
+    font-size: 85%;
+    color: gray;
+  }
+  .Sologan h1 {
+    line-height: 2rem;
+    font-weight: 350;
+    margin-bottom: 1%;
+  }
+  .search {
+    display: flex;
+    padding: 3.5vw 0;
+  }
+}

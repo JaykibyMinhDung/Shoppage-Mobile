@@ -1,0 +1,165 @@
+.Header {
+  display: flex;
+  justify-content: space-between;
+  font-style: italic;
+  margin-left: 20vw;
+  margin-right: 20vw;
+}
+.Header a {
+  margin: 1vw;
+  text-decoration: none;
+  /* color: rgb(0, 0, 0); */
+  font-style: italic;
+  font-size: large;
+}
+.Header a:hover {
+  color: #e7e700;
+}
+.Header a:active {
+  color: #e7e700;
+}
+.link {
+  color: rgb(0, 0, 0);
+}
+.active {
+  color: #e7e700;
+}
+.hometext {
+  display: flex;
+  color: rgb(0, 0, 0);
+}
+.hometext div {
+  padding: 1rem;
+  cursor: pointer;
+  font-size: larger;
+}
+.hometext div:hover {
+  color: #e7e700;
+}
+.hometext div:active {
+  color: #e7e700;
+}
+/* .hometext a {
+  margin: 1vw;
+} */
+/* .logintext a {
+  margin: 1vw;
+} */
+.logintext {
+  display: flex;
+  color: rgb(0, 0, 0);
+}
+
+.logintext div {
+  padding: 1rem;
+  cursor: pointer;
+  font-size: larger;
+}
+.logintext div:hover {
+  color: #e7e700;
+}
+.logintext div:active {
+  color: #e7e700;
+}
+.text_Boutique {
+  margin-top: 0.5rem;
+  color: rgb(0, 0, 0);
+  font-size: larger;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.Banner {
+  background-image: url("../../../ResourceAssignment03/banner1.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 10em;
+  margin-left: 20vw;
+  margin-right: 20vw;
+  text-transform: uppercase;
+  font-style: italic;
+  position: relative;
+  text-align: left;
+}
+.text_banner p {
+  color: rgb(163, 163, 163);
+  font-style: italic;
+}
+.text_sale {
+  font-size: larger;
+}
+.box_banner {
+  position: absolute;
+  left: 2vw;
+  top: 30%;
+}
+.buttonLogout {
+  /* display: flex; */
+  padding-top: 0.8rem;
+  font-style: italic;
+  font-size: large;
+}
+.buttonLogout:hover {
+  color: #e7e700;
+  cursor: pointer;
+}
+.button {
+  width: 12vw;
+  height: 3vw;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+  color: aliceblue;
+  background-color: rgba(0, 0, 0, 0.801);
+  font-style: italic;
+  text-align: center;
+}
+.button:hover {
+  outline: 0px;
+  color: aliceblue;
+  background-color: rgb(0, 0, 0);
+}
+
+@media (max-width: 600px) {
+  .Header {
+    margin-left: 0vw;
+    margin-right: 0vw;
+  }
+  .hometext div {
+    /* padding: 1rem; */
+    font-size: medium;
+  }
+  .logintext div {
+    /* padding: 1rem; */
+    font-size: 90%;
+  }
+  .text_Boutique {
+    /* margin-top: 0.5rem; */
+    color: rgb(0, 0, 0);
+    font-size: medium;
+    letter-spacing: 2px;
+    font-weight: 600;
+  }
+  .Banner {
+    background-size: 100%;
+    padding-right: 0rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    margin-left: 0vw;
+    margin-right: 0vw;
+  }
+  .box_banner button {
+    display: none;
+  }
+  .box_banner {
+    left: 2vw;
+    top: 10%;
+  }
+  .text_banner p {
+    color: rgb(163, 163, 163);
+    font-style: italic;
+  }
+  .buttonLogout {
+    padding-top: 0.8rem;
+    font-style: italic;
+    font-size: medium;
+  }
+}
