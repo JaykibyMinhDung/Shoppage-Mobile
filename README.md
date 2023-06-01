@@ -1,3 +1,26 @@
+# Ecommerce Mobiles
+
+Name project: Shoppage Mobiles
+
+Number Page: 5 main
+- HomePage
+- Login/Register Page
+- Detail Page Products
+- Cart Page
+- Checkout Page
+
+Skill: ReactJS, CSS, redux, React context, portal modal, Restful APIs, Socket, realtime
+
+Features: 
+- Navbar
+- Modal
+- Search Products
+- Show Products
+- Add Products to your cart
+- Remove Products in your cart
+- Calculate total bill and payment as credit card
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
